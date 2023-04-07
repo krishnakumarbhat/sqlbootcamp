@@ -91,3 +91,6 @@ INSERT INTO order_table (orderid, customerid, productid, totalprice) VALUES
 (2, 1, 2, 20);
 That's it! You have successfully created the ecomms database with three tables - products, customer, and order_table.cong guys
 
+
+![image](https://user-images.githubusercontent.com/79183768/230646259-95909489-413a-4b2c-a44e-30779af6a3fe.png)
+
