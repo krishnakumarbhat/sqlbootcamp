@@ -5,7 +5,7 @@ from tkinter import ttk
 from tkinter import messagebox
 
 # establish database connection
-db = pymysql.connect(host='localhost', user='root', password='Krishna@2002', database='ecomms')
+db = pymysql.connect(host='localhost', user='root', password='yourpass', database='ecomms')
 cursor = db.cursor()
 
 top = tkinter.Tk()
