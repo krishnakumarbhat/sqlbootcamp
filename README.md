@@ -1,4 +1,4 @@
-before going to backend(sql) part install some python library likr :
+before going to backend(sql) part install some python library like :
 
 pip install tkinter pymysql
 
