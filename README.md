@@ -1,3 +1,9 @@
+before going to backend(sql) part install some python library likr :
+
+pip install tkinter pymysql
+
+execute above command 
+
 Step 1: Open the MySQL command prompt or any MySQL client of your choice.
 
 Step 2: Create the ecomms database using the following command:
