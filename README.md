@@ -100,3 +100,14 @@ That's it! You have successfully created the ecomms database with three tables -
 
 ![image](https://user-images.githubusercontent.com/79183768/230646259-95909489-413a-4b2c-a44e-30779af6a3fe.png)
 
+
+
+here are some sql command that i have used in SQL project:
+
+1.DELETE FROM order_table WHERE customerid=%s AND productid=%s: This SQL command is used to delete a row from the order_table table where the customerid and productid match the values provided. It is used in the cancel_order() function to delete a specific order from the order_table table.
+
+2.INSERT INTO order_table (customerid, productid) VALUES (%s, %s): This SQL command is used to insert a new row into the order_table table with the customerid and productid values provided. It is used in the add_to_order() function to add a new order to the order_table table.
+
+3.UPDATE order_table SET productid = %s WHERE customerid = %s ORDER BY orderid DESC LIMIT 1: This SQL command is used to update the productid of the most recent order for a given customerid in the order_table table. It is not used in this project.
+
+4.SELECT customer.*, order_table.productid, order_table.totalprice FROM customer JOIN order_table ON customer.customerid=order_table.customerid WHERE customer.customerid='{customerid}': This SQL command is used to retrieve data from the customer and order_table tables using a JOIN operation. It selects all columns from the customer table and the productid and totalprice columns from the order_table table where the customerid matches the value provided. It is used in the search_data() function to retrieve and display data for a specific customer in the table widget.
