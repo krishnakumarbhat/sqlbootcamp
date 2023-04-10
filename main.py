@@ -105,12 +105,12 @@ def create_product_box(name, price, detail, image_file, row, column, productid):
 
     buy_button.pack(pady=10)
 # Create 5 product boxes
-create_product_box("Laptop", "$20", "intel i9 with RTX 4060", "a1.png", 6, 0,1)
-create_product_box("mobile", "$20", "Snapdragon 8 Gen 1", "a1.png", 6, 1,2)
-create_product_box("macbook", "$50", "m2 arm cortex ", "a3.png", 6, 3,3)
-create_product_box("smart watch", "$30", "p-oled display", "a4.png", 7, 0,4)
-create_product_box("i-pad", "$40", "retina display", "a5.png", 7, 1,5)
-create_product_box("Airpod", "$50", "Noise cancelation", "a6.png", 7, 3,6)
+create_product_box("Laptop", "$20", "(1)intel i9 with RTX 4060", "a1.png", 6, 0,1)
+create_product_box("mobile", "$20", "(2)Snapdragon 8 Gen 1", "a1.png", 6, 1,2)
+create_product_box("macbook", "$50", "(3)m2 arm cortex ", "a3.png", 6, 3,3)
+create_product_box("smart watch", "$30", "(4)p-oled display", "a4.png", 7, 0,4)
+create_product_box("i-pad", "$40", "(5)retina display", "a5.png", 7, 1,5)
+create_product_box("Airpod", "$50", "(6)Noise cancelation", "a6.png", 7, 3,6)
 
 def update_order():
     customerid = E.get()
