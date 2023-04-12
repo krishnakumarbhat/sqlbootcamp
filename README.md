@@ -58,7 +58,7 @@ Step 7: Insert the data into the customer table using the following command:
 
 
 INSERT INTO customer (customerid, Name, email) VALUES
-(123456, 'ravi', 'ravi45@gmail.com'),
+(1, 'ravi', 'ravi45@gmail.com'),
 (2, 'ramesh', 'ramesh44@sjce.com'),
 (3, 'ragu', 'ragu899@gmail.com'),
 (4, 'aneesh', 'aneesh45@outlook.com'),
