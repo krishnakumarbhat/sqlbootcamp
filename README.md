@@ -75,26 +75,23 @@ Step 8: Create the order_table using the following command:
 
 
 CREATE TABLE order_table (
-  orderid INT PRIMARY KEY,
-  customerid INT,
-  productid INT,
-  totalprice DECIMAL(10,2),
-  FOREIGN KEY (customerid) REFERENCES customer(customerid),
-  FOREIGN KEY (productid) REFERENCES products(productid)
+    orderid INT PRIMARY KEY AUTO_INCREMENT,
+    customerid INT,
+    productid INT,
+    totalprice DECIMAL(10,2),
+    FOREIGN KEY (customerid) REFERENCES customer(customerid),
+    FOREIGN KEY (productid) REFERENCES products(productid)
 );
-
 
 
 Step 9: Insert the data into the order_table using the following command:
 
+INSERT INTO order_table (customerid, productid, totalprice)
+VALUES (3, 3, 55), (2, 3, 19), (3, 1, 24);
 
-INSERT INTO order_table (orderid, customerid, productid, totalprice) VALUES
-(2, 3, 3, 55),
-(3, 2, 30, 19),
-(1, 3, 1, 24),
-(1, 1, 3, 25),
-(1, 2, 1, 25),
-(2, 1, 2, 20);
+
+
+
 That's it! You have successfully created the ecomms database with three tables - products, customer, and order_table.cong guys
 
 
