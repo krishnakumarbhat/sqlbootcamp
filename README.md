@@ -1,6 +1,6 @@
 before going to backend(sql) part install some python library like :
 
-pip install tkinter pymysql
+pip install tk pymysql cryptography 
 
 execute above command 
 
