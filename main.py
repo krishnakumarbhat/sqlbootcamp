@@ -5,7 +5,7 @@ from tkinter import ttk
 from tkinter import messagebox
 
 # establish database connection
-db = pymysql.connect(host='localhost', user='root', password='yourpass', database='ecomms')
+db = pymysql.connect(host='localhost', user='root', password='asdf@1234', database='ecomms')
 cursor = db.cursor()
 
 top = tkinter.Tk()
@@ -70,8 +70,6 @@ def add_to_order(productid):
     db.commit()  # commit the transaction
 
 
-
-
 # Define a function to create a product box
 def create_product_box(name, price, detail, image_file, row, column, productid):
     # Create a frame to hold the product information
@@ -104,6 +102,9 @@ def create_product_box(name, price, detail, image_file, row, column, productid):
     # buy_button = tkinter.Button(product_frame, text="Buy Now", bg="green", fg="white", font=("Helvetica", 12), command=lambda: add_to_order(productid))
 
     buy_button.pack(pady=10)
+
+
+
 # Create 5 product boxes
 create_product_box("Laptop", "$20", "(1)intel i9 with RTX 4060", "a1.png", 6, 0,1)
 create_product_box("mobile", "$20", "(2)Snapdragon 8 Gen 1", "a1.png", 6, 1,2)
@@ -111,6 +112,7 @@ create_product_box("macbook", "$50", "(3)m2 arm cortex ", "a3.png", 6, 3,3)
 create_product_box("smart watch", "$30", "(4)p-oled display", "a4.png", 7, 0,4)
 create_product_box("i-pad", "$40", "(5)retina display", "a5.png", 7, 1,5)
 create_product_box("Airpod", "$50", "(6)Noise cancelation", "a6.png", 7, 3,6)
+
 
 def update_order():
     customerid = E.get()
@@ -166,7 +168,7 @@ Bcancel = tkinter.Button(text='cancel order', fg='blue', bg='orange', command=la
 Bcancel.grid(row=5, column=1)
 
 
-Breplace = tkinter.Button(text='replace from cart', fg='blue', bg='orange', command=lambda: update_order())
+Breplace = tkinter.Button(text='remove from cart', fg='blue', bg='orange', command=lambda: update_order())
 Breplace.grid(row=5, column=0)
 
 
@@ -194,4 +196,3 @@ BSearch.grid(row=0, column=2)
 
 
 top.mainloop()
-
